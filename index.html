@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayCondo - Welcome</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #0b0709;
+            color: #e2e8f0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow: hidden;
+        }
+        /* Efek garis hujan vertikal samar menggunakan gradien bertema PlayCondo */
+        .bg-lines {
+            background: linear-gradient(to bottom, rgba(20, 14, 17, 0.8), rgba(11, 7, 9, 0.95)),
+                        repeating-linear-gradient(90s, transparent, transparent 40px, rgba(255, 101, 132, 0.08) 41px, transparent 42px);
+            background-size: cover;
+        }
+        .accent-pink {
+            color: #ff6584;
+        }
+        .bg-dark-card {
+            background: linear-gradient(135deg, #160f12 0%, #0e090b 100%);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center bg-lines relative px-4">
+
+    <!-- Efek dekorasi garis vertikal abstrak di latar belakang agar mirip 172673.jpg -->
+    <div class="absolute inset-0 pointer-events-none opacity-20 flex justify-around px-12">
+        <div class="w-[2px] h-32 bg-gradient-to-b from-transparent via-[#ff6584] to-transparent rounded-full animate-pulse" style="animation-duration: 3s;"></div>
+        <div class="w-[2px] h-48 bg-gradient-to-b from-transparent via-[#ff6584] to-transparent rounded-full animate-pulse mt-24" style="animation-duration: 4s;"></div>
+        <div class="w-[2px] h-24 bg-gradient-to-b from-transparent via-[#ff6584] to-transparent rounded-full animate-pulse mt-12" style="animation-duration: 2.5s;"></div>
+        <div class="w-[2px] h-40 bg-gradient-to-b from-transparent via-[#ff6584] to-transparent rounded-full animate-pulse mt-36" style="animation-duration: 5s;"></div>
+    </div>
+
+    <!-- KARTU UTAMA (Main Container) -->
+    <a href="index.html" class="w-full max-w-sm bg-dark-card border border-zinc-900/80 rounded-2xl p-6 shadow-2xl block hover:border-[#ff6584]/40 transition-all duration-300 transform hover:-translate-y-1 group">
+        
+        <!-- Wadah Ikon (Gaya PlayCondo) -->
+        <div class="w-12 h-12 rounded-xl bg-[#241419] flex items-center justify-center text-xl accent-pink border border-[#ff6584]/20 mb-5 group-hover:scale-105 transition-transform duration-300">
+            <i class="fa-solid fa-fire text-2xl"></i>
+        </div>
+
+        <!-- Teks Judul Utama -->
+        <h1 class="text-xl font-bold tracking-wider text-white uppercase group-hover:text-[#ff6584] transition-colors">
+            CONDO GAMES
+        </h1>
+
+        <!-- Sub-teks Deskripsi -->
+        <p class="text-xs text-gray-500 mt-1 font-medium tracking-wide">
+            Games Condo Server Links
+        </p>
+        
+    </a>
+
+</body>
+</html>
